@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html>
+<head>
+<title>BUDGET</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></link>
+<link href="favicon.ico" rel="icon" type="image/ico"></link>
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+	<div class="front_page">
+		<div class="top">
+			<div class="total_budget">
+				<div class="available_budget">Available budget <span class="month_name">%month%</span></div>
+				
+				<div class="total_amount">+12,000</div>
+				<div class="income_bar">
+					<div class="income">INCOME</div>
+					<div class="value">
+						<div class="income_amount">10,987</div>
+						<div class="income_space">&nbsp;</div>
+					</div>
+				</div>
+				<div class="expense_bar">
+					<div class="expense">EXPENSE</div>
+					<div class="value clearfix">
+						<div class="expense_amount">09,987</div>
+						<div class="percentage">%45</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="add">
+				<div class="evaluation">
+					<select class="choose_option">
+						<option value="inc" class="for_income">+</option>
+						<option value="exp" class="for_expense">-</option>
+					</select>
+					<input type="text" placeholder="Add discription" class="add_discription">
+					<input type="number" placeholder="Add value" class="add_value">
+					<button class="btn"><i class="ion-ios-checkmark-outline"></i></button>
+				</div>
+				<div class="container">
+					<div class="income_list">
+						<h1 class="heading_in">INCOME</h1>
+						<div class="in_list">
+						<!--
+							<div class="item clearfix" id="income-0">
+								<div class="item_description">salary</div>
+								<div class="right clearfix">
+									<div class="item_value">+78923</div>
+									<div class="item_delete">
+										<button class="item_delete--btn"><i class="ion-ios-close-outline"></i></button>
+									</div>
+								</div>
+							</div>
+							-->
+						</div>
+					</div>
+					<div class="expense_list">
+						<h1 class="heading_ex">EXPENSE</h1>
+						<div class="ex_list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="budget.js"></script>
+</body>
+</html>
